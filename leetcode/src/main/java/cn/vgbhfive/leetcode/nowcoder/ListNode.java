@@ -1,9 +1,5 @@
 package cn.vgbhfive.leetcode.nowcoder;
 
-/**
- * @author Vgbh
- * @date 2021/8/10 23:20
- */
 public class ListNode {
 
     int val;
@@ -15,4 +11,11 @@ public class ListNode {
         this.next = null;
     }
 
+    public static void print(ListNode node) {
+        while (node != null) {
+            System.out.print(node.val + " -> ");
+            node = node.next;
+        }
+        System.out.println();
+    }
 }
